@@ -1,0 +1,38 @@
+/* Add styles here */
+.container {
+    width: 800px;
+    margin: 50px auto;
+    border: 5px solid black;
+    text-align: center;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+.sidebar {
+    flex: 1.2;
+}
+header {
+    background-color: salmon;
+    padding: 40px;
+}
+aside {
+    background-color: yellow;
+    padding: 50px;
+}
+nav {
+    background-color: blue;
+    padding: 60px;
+}
+main {
+    background-color: green;
+    padding: 80px;
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer {
+    background-color: red;
+    padding: 25px;
+}
