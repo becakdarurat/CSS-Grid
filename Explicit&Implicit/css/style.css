@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+    }
+    .container {
+        width: 60%;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: 100px 50px;
+        grid-template-rows: 100px 50px repeat(3,30px);
+        grid-auto-flow: column;
+    }
+    .item {
+        background-color: lightblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .item:nth-child(even){
+        background-color: salmon;
+    }
