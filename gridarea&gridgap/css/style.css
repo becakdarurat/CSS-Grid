@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 
+    'header header header'
+    'sidebar sidebar sidebar'
+    'contet contet contet'
+    'footer footer footer';
+}
+.header {
+    background-color: green;
+    grid-area: header;
+}
+.sidebar {
+    background-color: yellow;
+    grid-area: sidebar;
+}
+.content {
+    background-color: pink;
+    grid-area: contet;
+}
+.footer {
+    background-color: red;
+    grid-area: footer;
+}
+.item {
+    width: 100%;
+    /* background-color: lightblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+    box-sizing: border-box;
+}
+
+/* Responsive BreakPoint */
+    /* lebar HP dibawah 578 */
+@media screen and (min-width: 578px){
+    .container {
+        grid-template-areas: 
+        'header header header'
+        'sidebar contet contet'
+        'sidebar contet contet'
+        'footer footer footer';
+    }
+}
